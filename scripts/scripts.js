@@ -104,8 +104,11 @@ $( document ).ready(function() {
     // Parallax
   
     // setTimeout serve para carregar primeiro as imagens
+    var scene = document.getElementById('data-area');
+    var parallaxInstance = new Parallax(scene);
+
     setTimeout(function() {
-      $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
+      $('#data-area').parallaxInstance({imageSrc: 'img/cidadeparallax.png'});
     }, 200);
   
   });
